@@ -1,52 +1,201 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portfolio | Nama Kamu</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#0b1020;color:#eef2ff;line-height:1.7}
-a{text-decoration:none;color:inherit}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
-nav{position:sticky;top:0;z-index:10;background:#0b1020ee;border-bottom:1px solid #20283d;backdrop-filter:blur(12px)}
-.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;letter-spacing:-.04em}.logo span{color:#7dd3fc}
-.links{display:flex;gap:26px;color:#aab4cc;font-size:.92rem}.links a:hover{color:#fff}
-.hero{padding:105px 0 90px}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
-.badge{display:inline-block;padding:7px 13px;border:1px solid #29466d;border-radius:999px;background:#111b31;color:#7dd3fc;font-size:.82rem;font-weight:750;margin-bottom:22px}
-h1{font-size:clamp(3rem,7vw,5.7rem);line-height:.98;letter-spacing:-.065em;margin-bottom:25px}h1 span{color:#7dd3fc}
-.lead{font-size:1.1rem;color:#aab4cc;max-width:650px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{padding:12px 18px;border-radius:12px;border:1px solid #303b55;font-weight:750}.btn.primary{background:#fff;color:#0b1020;border-color:#fff}
-.photo{aspect-ratio:1;border-radius:30px;background:#17233e;border:1px solid #2a3650;display:flex;align-items:center;justify-content:center;text-align:center;color:#73809a;box-shadow:0 25px 70px #0006}
-section{padding:80px 0}.kicker{color:#7dd3fc;font-size:.78rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
-h2{font-size:2.2rem;letter-spacing:-.04em;margin:7px 0 12px}.intro{color:#8f9bb3;max-width:700px;margin-bottom:32px}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{background:#11182a;border:1px solid #202b42;border-radius:20px;padding:28px}.card p{color:#99a5bb}
-.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.skill{padding:8px 12px;border-radius:9px;background:#18233a;color:#cbd5e1;font-size:.88rem}
-.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project{padding:0;overflow:hidden}.project-img{aspect-ratio:16/10;background:#18233a;display:flex;align-items:center;justify-content:center;color:#687792}.project-body{padding:24px}.project-body small{color:#7dd3fc;font-weight:800}.project-body h3{margin:7px 0 8px}.project-body p{font-size:.92rem}
-.timeline{display:grid;gap:18px}.timeline-item{display:grid;grid-template-columns:150px 1fr;gap:20px}.date{color:#7dd3fc;font-size:.9rem;font-weight:700}
-.contact{padding:55px;border-radius:25px;background:#172554;border:1px solid #263a61}.contact p{color:#aab4cc;max-width:650px;margin:12px 0 25px}
-footer{padding:35px 0 55px;color:#66738d;font-size:.88rem}
-@media(max-width:800px){.links{display:none}.hero{padding:75px 0}.hero-grid,.grid2{grid-template-columns:1fr}.photo{max-width:350px;margin:auto}.projects{grid-template-columns:1fr}.timeline-item{grid-template-columns:1fr;gap:2px}.contact{padding:35px 25px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional untuk lamaran Magang HUB">
+  <title>Portfolio | Safrudin Laasi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav><div class="wrap nav"><a class="logo" href="#">NAMA<span>.</span></a><div class="links"><a href="#tentang">Tentang</a><a href="#proyek">Proyek</a><a href="#pengalaman">Pengalaman</a><a href="#kontak">Kontak</a></div></div></nav>
-<header class="hero"><div class="wrap hero-grid"><div>
-<div class="badge">Calon Peserta Magang HUB</div>
-<h1>Halo, saya<br><span>Nama Kamu.</span></h1>
-<p class="lead">Saya [mahasiswa/lulusan] [jurusan] yang tertarik pada bidang [bidang]. Saya senang belajar hal baru, bekerja secara kolaboratif, dan menghasilkan karya yang bermanfaat.</p>
-<div class="buttons"><a class="btn primary" href="#proyek">Lihat Karya</a><a class="btn" href="#kontak">Hubungi Saya</a></div>
-</div><div class="photo"><div><strong>FOTO PROFESIONAL</strong><br>Ganti area ini dengan foto kamu</div></div></div></header>
-<section id="tentang"><div class="wrap"><div class="kicker">01 — Tentang</div><h2>Tentang Saya</h2><p class="intro">Perkenalkan diri secara singkat dan tampilkan kemampuan yang relevan untuk program magang.</p>
-<div class="grid2"><div class="card"><h3>Profil</h3><p style="margin-top:12px">Saya adalah [mahasiswa/lulusan] dari [institusi], jurusan [jurusan]. Saya memiliki pengalaman dalam [bidang/kegiatan] dan ingin mengembangkan kemampuan profesional melalui Magang HUB.</p></div>
-<div class="card"><h3>Keahlian</h3><div class="skills"><span class="skill">Microsoft Office</span><span class="skill">Canva</span><span class="skill">Komunikasi</span><span class="skill">Administrasi</span><span class="skill">[Skill lain]</span></div></div></div></div></section>
-<section id="proyek"><div class="wrap"><div class="kicker">02 — Karya</div><h2>Proyek & Karya</h2><p class="intro">Tampilkan 2–4 karya terbaik kamu dengan gambar dan penjelasan singkat.</p>
-<div class="projects"><article class="card project"><div class="project-img">Gambar proyek</div><div class="project-body"><small>PROYEK 01</small><h3>Nama Proyek</h3><p>Jelaskan apa yang kamu kerjakan, tools yang digunakan, dan hasilnya.</p></div></article>
-<article class="card project"><div class="project-img">Gambar proyek</div><div class="project-body"><small>PROYEK 02</small><h3>Nama Proyek</h3><p>Jelaskan peran dan kontribusi kamu secara singkat dan jelas.</p></div></article>
-<article class="card project"><div class="project-img">Gambar proyek</div><div class="project-body"><small>PROYEK 03</small><h3>Nama Proyek</h3><p>Tambahkan pencapaian atau tautan karya jika ada.</p></div></article></div></div></section>
-<section id="pengalaman"><div class="wrap"><div class="kicker">03 — Perjalanan</div><h2>Pengalaman & Pendidikan</h2><p class="intro">Organisasi, kepanitiaan, freelance, proyek kuliah, maupun pengalaman kerja bisa dicantumkan.</p>
-<div class="card timeline"><div class="timeline-item"><div class="date">2024 — Sekarang</div><div><h3>Nama Institusi / Organisasi</h3><p>Posisi / Jurusan — Jelaskan tanggung jawab atau kegiatan utama.</p></div></div>
-<div class="timeline-item"><div class="date">2023 — 2024</div><div><h3>Nama Kegiatan / Proyek</h3><p>Peran kamu — Jelaskan kontribusi dan hasil yang dicapai.</p></div></div></div></div></section>
-<section id="kontak"><div class="wrap"><div class="contact"><div class="kicker">04 — Kontak</div><h2>Siap untuk kesempatan berikutnya.</h2><p>Terima kasih telah mengunjungi portfolio saya. Saya terbuka untuk belajar, berkolaborasi, dan berkembang melalui program Magang HUB.</p>
-<div class="buttons"><a class="btn primary" href="mailto:emailkamu@gmail.com">Email Saya</a><a class="btn" href="https://wa.me/628XXXXXXXXXX">WhatsApp</a></div></div></div></section>
-<footer><div class="wrap">© 2026 Nama Kamu · Portfolio Lamaran Magang HUB</div></footer>
-</body></html>
+
+  <nav>
+    <div class="wrap nav">
+      <a class="logo" href="#">Safrudin<span> Laasi</span></a>
+
+      <div class="links">
+        <a href="#tentang"><i class="fa-solid fa-user"></i> Tentang</a>
+        <a href="#proyek"><i class="fa-solid fa-folder-open"></i> Proyek</a>
+        <a href="#pengalaman"><i class="fa-solid fa-briefcase"></i> Pengalaman</a>
+        <a href="#kontak"><i class="fa-solid fa-envelope"></i> Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="badge">
+          <i class="fa-solid fa-circle-check"></i>
+          Calon Peserta Magang HUB
+        </div>
+
+        <h1>Halo, saya<br><span>Nama Kamu.</span></h1>
+
+        <p class="lead">
+          Saya [mahasiswa/lulusan] [jurusan] yang tertarik pada bidang [bidang].
+          Saya senang belajar hal baru, bekerja secara kolaboratif, dan menghasilkan
+          karya yang bermanfaat.
+        </p>
+
+        <div class="buttons">
+          <a class="btn primary" href="#proyek">
+            <i class="fa-solid fa-arrow-down"></i> Lihat Karya
+          </a>
+          <a class="btn" href="#kontak">
+            <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+          </a>
+        </div>
+      </div>
+
+      <div class="photo">
+        <div>
+          <i class="fa-solid fa-user fa-3x"></i>
+          <strong>FOTO PROFESIONAL</strong>
+          <span>Ganti area ini dengan foto kamu</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="tentang">
+    <div class="wrap">
+      <div class="kicker">01 — Tentang</div>
+      <h2>Tentang Saya</h2>
+      <p class="intro">
+        Perkenalkan diri secara singkat dan tampilkan kemampuan yang relevan
+        untuk program magang.
+      </p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3><i class="fa-solid fa-user"></i> Profil</h3>
+          <p>
+            Saya adalah [mahasiswa/lulusan] dari [institusi], jurusan [jurusan].
+            Saya memiliki pengalaman dalam [bidang/kegiatan] dan ingin
+            mengembangkan kemampuan profesional melalui Magang HUB.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3><i class="fa-solid fa-code"></i> Keahlian</h3>
+          <div class="skills">
+            <span class="skill">Microsoft Office</span>
+            <span class="skill">Canva</span>
+            <span class="skill">Komunikasi</span>
+            <span class="skill">Administrasi</span>
+            <span class="skill">[Skill lain]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyek">
+    <div class="wrap">
+      <div class="kicker">02 — Karya</div>
+      <h2>Proyek & Karya</h2>
+      <p class="intro">
+        Tampilkan 2–4 karya terbaik kamu dengan gambar dan penjelasan singkat.
+      </p>
+
+      <div class="projects">
+        <article class="card project">
+          <div class="project-img">
+            <i class="fa-regular fa-image fa-2x"></i>
+            <span>Gambar proyek</span>
+          </div>
+          <div class="project-body">
+            <small>PROYEK 01</small>
+            <h3>Nama Proyek</h3>
+            <p>Jelaskan apa yang kamu kerjakan, tools yang digunakan, dan hasilnya.</p>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-img">
+            <i class="fa-regular fa-image fa-2x"></i>
+            <span>Gambar proyek</span>
+          </div>
+          <div class="project-body">
+            <small>PROYEK 02</small>
+            <h3>Nama Proyek</h3>
+            <p>Jelaskan peran dan kontribusi kamu secara singkat dan jelas.</p>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-img">
+            <i class="fa-regular fa-image fa-2x"></i>
+            <span>Gambar proyek</span>
+          </div>
+          <div class="project-body">
+            <small>PROYEK 03</small>
+            <h3>Nama Proyek</h3>
+            <p>Tambahkan pencapaian atau tautan karya jika ada.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pengalaman">
+    <div class="wrap">
+      <div class="kicker">03 — Perjalanan</div>
+      <h2>Pengalaman & Pendidikan</h2>
+      <p class="intro">
+        Organisasi, kepanitiaan, freelance, proyek kuliah, maupun pengalaman
+        kerja bisa dicantumkan.
+      </p>
+
+      <div class="card timeline">
+        <div class="timeline-item">
+          <div class="date">2024 — Sekarang</div>
+          <div>
+            <h3>Nama Institusi / Organisasi</h3>
+            <p>Posisi / Jurusan — Jelaskan tanggung jawab atau kegiatan utama.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">2023 — 2024</div>
+          <div>
+            <h3>Nama Kegiatan / Proyek</h3>
+            <p>Peran kamu — Jelaskan kontribusi dan hasil yang dicapai.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <div class="wrap">
+      <div class="contact">
+        <div class="kicker">04 — Kontak</div>
+        <h2>Siap untuk kesempatan berikutnya.</h2>
+        <p>
+          Terima kasih telah mengunjungi portfolio saya. Saya terbuka untuk
+          belajar, berkolaborasi, dan berkembang melalui program Magang HUB.
+        </p>
+
+        <div class="buttons">
+          <a class="btn primary" href="mailto:emailkamu@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Email Saya
+          </a>
+          <a class="btn" href="https://wa.me/628XXXXXXXXXX">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © 2026 Nama Kamu · Portfolio Lamaran Magang HUB
+    </div>
+  </footer>
+
+</body>
+</html>
