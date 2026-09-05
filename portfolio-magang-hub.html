@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Nama Kamu</title>
+  <meta name="description" content="Portofolio profesional Nama Kamu untuk lamaran Magang HUB.">
+  <style>
+    :root {
+      --bg: #f7f8fc;
+      --surface: #ffffff;
+      --text: #171a24;
+      --muted: #667085;
+      --line: #e7e9ef;
+      --primary: #1d4ed8;
+      --primary-dark: #163da8;
+      --soft: #eef4ff;
+      --radius: 20px;
+      --shadow: 0 12px 35px rgba(16, 24, 40, .08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1080px, calc(100% - 40px)); margin: auto; }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(247,248,252,.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(231,233,239,.8);
+    }
+    .nav-inner { height: 72px; display:flex; align-items:center; justify-content:space-between; }
+    .brand { font-weight: 800; letter-spacing: -.03em; }
+    .nav-links { display:flex; gap: 28px; color:var(--muted); font-size:.95rem; }
+    .nav-links a:hover { color:var(--text); }
+    .hero { padding: 100px 0 90px; }
+    .hero-grid { display:grid; grid-template-columns: 1.35fr .65fr; gap:70px; align-items:center; }
+    .eyebrow {
+      display:inline-flex; padding:7px 12px; border-radius:999px;
+      background:var(--soft); color:var(--primary); font-weight:700; font-size:.85rem;
+      margin-bottom:20px;
+    }
+    h1 { font-size: clamp(2.6rem, 7vw, 5rem); line-height:1.02; letter-spacing:-.055em; margin-bottom:22px; }
+    .hero p { max-width:650px; color:var(--muted); font-size:1.12rem; }
+    .buttons { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center; padding:12px 18px;
+      border-radius:12px; font-weight:700; border:1px solid var(--line);
+      background:var(--surface);
+    }
+    .btn.primary { background:var(--primary); color:white; border-color:var(--primary); }
+    .btn.primary:hover { background:var(--primary-dark); }
+    .profile {
+      width:100%; aspect-ratio:1; border-radius:28px; background:var(--surface);
+      box-shadow:var(--shadow); border:1px solid var(--line);
+      display:flex; align-items:center; justify-content:center; overflow:hidden;
+    }
+    .profile span { color:var(--muted); text-align:center; padding:25px; }
+    section { padding: 75px 0; }
+    .section-title { font-size:2rem; letter-spacing:-.035em; margin-bottom:12px; }
+    .section-intro { color:var(--muted); margin-bottom:32px; max-width:700px; }
+    .about { display:grid; grid-template-columns:1fr 1fr; gap:25px; }
+    .card {
+      background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+      padding:28px; box-shadow:var(--shadow);
+    }
+    .skills { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+    .skill { background:#f2f4f7; padding:8px 12px; border-radius:999px; font-size:.9rem; }
+    .projects { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .project { padding:0; overflow:hidden; }
+    .project-image {
+      aspect-ratio:16/10; background:#eef1f6; display:flex; align-items:center; justify-content:center;
+      color:var(--muted); font-size:.9rem;
+    }
+    .project-body { padding:24px; }
+    .project h3 { margin-bottom:8px; }
+    .project p { color:var(--muted); font-size:.93rem; }
+    .tag { color:var(--primary); font-size:.82rem; font-weight:800; margin-bottom:10px; display:block; }
+    .experience { display:grid; gap:16px; }
+    .experience-item { display:grid; grid-template-columns:160px 1fr; gap:25px; }
+    .date { color:var(--muted); font-size:.92rem; }
+    .contact { background:var(--text); color:white; border-radius:28px; padding:55px; }
+    .contact p { color:#c7cad4; max-width:650px; margin:12px 0 25px; }
+    footer { padding:35px 0 55px; color:var(--muted); font-size:.9rem; }
+    @media (max-width: 800px) {
+      .nav-links { display:none; }
+      .hero { padding:70px 0; }
+      .hero-grid, .about { grid-template-columns:1fr; }
+      .profile { max-width:360px; margin:auto; }
+      .projects { grid-template-columns:1fr; }
+      .experience-item { grid-template-columns:1fr; gap:4px; }
+      .contact { padding:35px 25px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#">NAMA KAMU</a>
+    <div class="nav-links">
+      <a href="#tentang">Tentang</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Calon Peserta Magang HUB</span>
+      <h1>Halo, saya<br>Nama Kamu.</h1>
+      <p>
+        Saya [mahasiswa/lulusan] [jurusan] dengan minat pada [bidang].
+        Saya tertarik mengembangkan kemampuan, belajar dari lingkungan profesional,
+        dan memberikan kontribusi melalui kemampuan yang saya miliki.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#proyek">Lihat Proyek</a>
+        <a class="btn" href="#kontak">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="profile">
+      <span>Tempat foto profesional<br><small>Ganti bagian ini dengan foto kamu</small></span>
+    </div>
+  </div>
+</header>
+
+<section id="tentang">
+  <div class="container">
+    <h2 class="section-title">Tentang Saya</h2>
+    <p class="section-intro">Ringkas, jelas, dan fokus pada kemampuan yang relevan untuk program magang.</p>
+    <div class="about">
+      <div class="card">
+        <h3>Profil</h3>
+        <p style="margin-top:12px;color:var(--muted)">
+          Saya adalah [mahasiswa/lulusan] dari [nama institusi], jurusan [jurusan].
+          Saya memiliki ketertarikan pada [bidang] dan terbiasa mengerjakan [jenis pekerjaan/proyek].
+        </p>
+      </div>
+      <div class="card">
+        <h3>Keahlian</h3>
+        <div class="skills">
+          <span class="skill">Microsoft Office</span>
+          <span class="skill">Canva</span>
+          <span class="skill">Komunikasi</span>
+          <span class="skill">Administrasi</span>
+          <span class="skill">[Skill lain]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proyek">
+  <div class="container">
+    <h2 class="section-title">Proyek & Karya</h2>
+    <p class="section-intro">Tampilkan 2–4 karya terbaik. Ganti contoh di bawah dengan karya nyata kamu.</p>
+    <div class="projects">
+      <article class="card project">
+        <div class="project-image">Gambar Proyek 01</div>
+        <div class="project-body">
+          <span class="tag">PROYEK 01</span>
+          <h3>Nama Proyek</h3>
+          <p>Jelaskan singkat apa yang kamu kerjakan, tools yang digunakan, dan hasilnya.</p>
+        </div>
+      </article>
+      <article class="card project">
+        <div class="project-image">Gambar Proyek 02</div>
+        <div class="project-body">
+          <span class="tag">PROYEK 02</span>
+          <h3>Nama Proyek</h3>
+          <p>Jelaskan kontribusi atau peran kamu dan kemampuan yang ditunjukkan melalui proyek ini.</p>
+        </div>
+      </article>
+      <article class="card project">
+        <div class="project-image">Gambar Proyek 03</div>
+        <div class="project-body">
+          <span class="tag">PROYEK 03</span>
+          <h3>Nama Proyek</h3>
+          <p>Tambahkan pencapaian, hasil, atau link untuk melihat karya secara lengkap.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="pengalaman">
+  <div class="container">
+    <h2 class="section-title">Pengalaman & Pendidikan</h2>
+    <div class="card experience">
+      <div class="experience-item">
+        <div class="date">2024 — Sekarang</div>
+        <div><h3>Nama Institusi / Organisasi</h3><p style="color:var(--muted)">Posisi / Jurusan — Jelaskan tanggung jawab atau kegiatan utama.</p></div>
+      </div>
+      <div class="experience-item">
+        <div class="date">2023 — 2024</div>
+        <div><h3>Nama Kegiatan / Proyek</h3><p style="color:var(--muted)">Peran kamu — Jelaskan kontribusi dan hasil yang dicapai.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontak">
+  <div class="container">
+    <div class="contact">
+      <h2>Terima kasih sudah berkunjung.</h2>
+      <p>Saya terbuka untuk kesempatan belajar, berkolaborasi, dan berkembang melalui program Magang HUB.</p>
+      <div class="buttons">
+        <a class="btn primary" href="mailto:emailkamu@gmail.com">Email Saya</a>
+        <a class="btn" href="https://wa.me/628XXXXXXXXXX">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 Nama Kamu · Portfolio untuk Lamaran Magang HUB</div>
+</footer>
+
+</body>
+</html>
